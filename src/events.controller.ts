@@ -1,3 +1,4 @@
+import { CreateEventDto } from './create-event.dto';
 import {
   Body,
   Controller,
@@ -25,7 +26,7 @@ export class EventsController {
   }
 
   @Post()
-  create(@Body() input) {
+  create(@Body() input: CreateEventDto) {
     return input;
   }
 
